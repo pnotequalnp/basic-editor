@@ -1,0 +1,23 @@
+cabal-version: 2.4
+name:          basic-editor
+version:       0.1.0.0
+license:       ISC
+license-file:  LICENSE
+author:        Kevin Mullins
+maintainer:    kevin@pnotequalnp.com
+
+executable basic-editor
+  hs-source-dirs:     src
+  main-is:            Main.hs
+  default-language:   Haskell2010
+  ghc-options:        -Wall -threaded
+  default-extensions:
+    ImportQualifiedPost
+    LambdaCase
+    OverloadedStrings
+
+  build-depends:
+    , base          ^>=4.14.1.0
+    , brick
+    , text
+    , vty
